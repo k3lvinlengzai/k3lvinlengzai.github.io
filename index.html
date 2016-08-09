@@ -63,9 +63,19 @@
 		</style>
 		<script>
 			$(document).ready(function(){
+				var Clear = document.getElementById("Clear");
 				var Math = document.getElementById("Math");
 				var Chem = document.getElementById("Chemistry");
 				var Phy = document.getElementById("Physics")
+				$("#Clear").click(function(){
+					$("#Game").html('<div class="container"><h2>No game loaded, please pick a game on the button above.</h2></div>');
+					Math.disabled = false;
+					Chem.disabled = false;
+					Phy.disabled = false;
+					Math.className = Math.className.replace( /(?:^|\s)disabled(?!\S)/g , ' btn-success ' );
+					Chem.className = Chem.className.replace( /(?:^|\s)disabled(?!\S)/g , ' btn-success ' );
+					Phy.className = Phy.className.replace( /(?:^|\s)disabled(?!\S)/g , ' btn-success ' );
+				})
 				$("#Math").click(function(){
 					$("#Game").html('<iframe src="https://k3lvinlengzai.github.io/IntelMath.html" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>');
 					Math.disabled = true;
@@ -101,6 +111,7 @@
 		<div class="container" id="_container">
 			<h1 id="_IntelRunner">Intel Runner</h1>
 			<div class="row" id="_btnRow">
+				<button class="_gameBtn btn-warning btn-lg" id="Clear">Reset Game</button>
 				<button class="_gameBtn btn-success btn-lg" id="Math">Math</button>
 				<button class="_gameBtn btn-success btn-lg" id="Chemistry">Chemistry</button>
 				<button class="_gameBtn btn-success btn-lg" id="Physics">Physics</button>
