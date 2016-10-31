@@ -1,0 +1,25 @@
+/*Navbar*/
+.navbar-custom .navbar-brand {
+    color: #ff9000;
+}
+
+/*Navbar hover*/
+.navbar-custom .navbar-nav>.active>a {
+    background-color: #ff9000;
+}
+
+/*fa-inverse*/
+.fa-inverse {
+    background-color: #ff9000;
+    border-radius: 60px;
+}
+
+/*Roadmap*/
+.timeline>li .timeline-image {
+    background-color: #ff9000;
+}
+
+.btn-xl {
+    background-color: #ff9000;
+    border-color: #ff9800;
+}
