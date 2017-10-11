@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gamerholic Admin</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- End Css -->
+
+	<!-- Javascript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="Angular/module.js"></script>
+	<script src="Angular/controller.js"></script>
+	<script src="Angular/style.js"></script>
+	<!-- End Javascript -->
+</head>
+<body>
+	<nav class="navbar navbar-light">
+		<a class="container navbar-brand" href="index.html"><b>Gamerholic Admin</b></a>
+	</nav>
+
+	<form class="container">
+		<div class="form-group">
+			<label for="exampleInputEmail1">Title</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="PSO2" required>
+			<small id="emailHelp" class="form-text text-muted"></small>
+		</div>
+		<div class="form-group">
+			<label for="exampleTextarea">Description</label>
+			<textarea class="form-control" id="exampleTextarea" placeholder="I am so handsome" rows="5" required></textarea>
+		</div>
+		<div class="form-row align-items-center">
+			<div class="col-auto">
+				<label class="sr-only" for="inlineFormInput">Rating</label>
+				<input type="number" min="0" max="10" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Rating" required>
+			</div>
+			<div class="col-auto">
+	      <label class="mr-sm-2" for="inlineFormCustomSelect">Platform</label>
+	      <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" placeholder="Platform" required>
+	        <option selected></option>
+	        <option value="1">PC</option>
+	        <option value="2">PS4</option>
+	        <option value="3">Xbox</option>
+	        <option value="4">Switch</option>
+	        <option value="5">Mobile</option>
+	        <option value="6">Vita</option>
+	        <option value="7">Other</option>
+	      </select>
+	    </div>
+			<div class="col-auto">
+	      <label class="mr-sm-2" for="inlineFormCustomSelect">Genre</label>
+	      <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" placeholder="Genre" required>
+	        <option selected></option>
+	        <option value="1">Action</option>
+	        <option value="2">Adventure</option>
+	        <option value="3">Arcade</option>
+	        <option value="4">Role Playing</option>
+	        <option value="5">Simulation</option>
+	        <option value="6">Strategy</option>
+	        <option value="7">Sports</option>
+	        <option value="8">Casual</option>
+	        <option value="9">Indie</option>
+	        <option value="10">Other</option>
+	      </select>
+	    </div>
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="exampleInputFile">Image</label>
+			<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" accept="image/*" required>
+			<small id="fileHelp" class="form-text text-muted">Image to upload.</small>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Youtube embed code</label>
+			<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Optional">
+			<small id="emailHelp" class="form-text text-muted"></small>
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+</body>
+</html>
